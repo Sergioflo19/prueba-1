@@ -78,7 +78,7 @@
   /* Hero con imagen completa */
   .hero {
     position: relative;
-    background: url("/static/car1.jpg") center center / cover no-repeat;
+    background: url("/prueba-1/static/car1.jpg") center center / cover no-repeat;
     color: white;
     height: 85vh;
     display: flex;
@@ -94,7 +94,7 @@
 
   @font-face {
     font-family: 'Upbolters';
-    src: url('/static/Upbolters.ttf') format('truetype');
+    src: url('/prueba-1/static/Upbolters.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
