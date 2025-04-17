@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Header completo */
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+  }
+  
+  /* Fila superior */
+  .header-top {
+    background-color: #f4f4f4;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Fila inferior */
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header-main img {
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Menú de navegación */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: red;
+  }
+  
+  /* Botón contacto */
+  .btn-contacto {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-contacto:hover {
+    background-color: darkred;
+  }
+  
+  /* Hero con imagen completa */
+  .hero {
+    position: relative;
+    background: url("/static/car1.jpg") center center / cover no-repeat;
+    color: white;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    z-index: 1;
+  }
+
+  @font-face {
+    font-family: 'Upbolters';
+    src: url('/static/Upbolters.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .hero h1 {
+    font-family: 'Upbolters', sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+  }
+  
+  /* Estadísticas */
+  .stats {
+    background: #fff;
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .stats div {
+    max-width: 200px;
+  }
+  
+  .stats span {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+  }
+
+      /* Estilo botón flotante WhatsApp */
+      #whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25D366;
+        color: white;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        transition: background-color 0.3s ease;
+        z-index: 999;
+        display: inline-flex;
+        align-items: center;
+      }
+  
+      #whatsapp-btn:hover {
+        background-color: #1ebe5d;
+      }
+  
