@@ -14,8 +14,11 @@
   <header>
     <!-- Fila superior -->
     <div class="header-top">
-      <span>📞 + (505) 8654-5585</span>
-      <span>📍 Nicaragua</span>
+      <span>
+        <img  src= "/prueba-1/static/img/tel1.png"/>+ (505) 8654-5585</span>
+      <span>
+         <img src="/prueba-1/static/img/ubic.png"/> Nicaragua
+        </span>
     </div>
 
     <!-- Fila inferior -->
@@ -35,38 +38,94 @@
 
   <section class="hero">
     <div class="hero-content">
-      <h1>+9 años ofreciendo soluciones industriales eficientes</h1>
+      <h1>+10 años ofreciendo soluciones industriales eficientes</h1>
     </div>
   </section>
 
   <section class="stats">
-    <div>
-      <span>+54</span>
-      Suministro e instalación<br><strong>Proyectos Realizados</strong>
+    <div class="stat">
+      <span class="stat-number">+54</span>
+      <div class="stat-text">
+        <p class="stat-label">Suministro e instalación</p>
+        <p class="stat-sublabel">Proyectos Realizados</p>
+      </div>
     </div>
-    <div>
-      <span>+75</span>
-      Fabricación de estructuras<br><strong>Proyectos Metal Mecánica</strong>
+    <div class="stat">
+      <span class="stat-number">+75</span>
+      <div class="stat-text">
+        <p class="stat-label">Fabricación de estructuras</p>
+        <p class="stat-sublabel">Proyectos Metal‑Mecánica</p>
+      </div>
     </div>
-    <div>
-      <span>+1200</span>
-      Transporte de materiales<br><strong>Fletes Realizados</strong>
+    <div class="stat">
+      <span class="stat-number">+1200</span>
+      <div class="stat-text">
+        <p class="stat-label">Transporte de materiales</p>
+        <p class="stat-sublabel">Fletes Realizados</p>
+      </div>
     </div>
   </section>
 
   <a id="whatsapp-btn" target="_blank">
     <i class="fab fa-whatsapp" style="margin-right: 8px;"></i>
-    Gerente Josvel
+    Cotizar
   </a>
+
   <script>
     const phone = "50576066045";
     const message = "Hola, me gustaría cotizar un producto.";
     const btn = document.getElementById("whatsapp-btn");
-
     btn.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    // Carrusel de fondo
+    const hero = document.querySelector('.hero');
+    const backgrounds = [
+      "/prueba-1/static/car1.jpg",
+      "/prueba-1/static/img/foto2.png",
+      "/prueba-1/static/img/p2.jpg"
+    ];
+    let current = 0;
+    setInterval(() => {
+      current = (current + 1) % backgrounds.length;
+      hero.style.backgroundImage = `url(${backgrounds[current]})`;
+    }, 5000);
+
+    // Animación fade-in del H1
+    window.addEventListener("DOMContentLoaded", () => {
+      const h1 = document.querySelector(".hero h1");
+      setTimeout(() => {
+        h1.classList.add("fade-in");
+      }, 2000);
+    });
   </script>
 
-
 </body>
+<footer class="footer">
+  <div class="footer-top">
+    <img src="/prueba-1/static/img/SMO ROJO BLANCO (1).png" alt="SMO S.A" class="logo">
+
+    <div class="footer-info">
+      <div class="contact">
+        <p><i class="fas fa-phone-alt"></i> +(505) 2298-3346 al 49</p>
+        <p><i class="fab fa-whatsapp"></i> +(505) 8732-9513</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:ventas@smo-ni.com">ventas@smo-ni.com</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Km 11.5 Carretera a Masaya. Complejo OFINOVA, Ofibodegas 7 y 8. Managua, Nicaragua.</p>
+      </div>
+    </div>
+
+    <div class="footer-logo-30">
+      <img src="30anos.png" alt="30 años al servicio de la industria">
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="footer-bottom">
+    <a href="https://www.linkedin.com/company/smo-servicios-multiples-obando/"><i class="fab fa-linkedin"></i></a>
+    <p>Especialistas en manejo de fluidos industriales, sistemas de vapor y uso eficiente de la energía.</p>
+  </div>
+</footer>
+
 </html>
+
 
